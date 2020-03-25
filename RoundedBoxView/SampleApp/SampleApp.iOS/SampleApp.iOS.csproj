@@ -217,7 +217,8 @@
     <ProjectReference Include="..\..\RoundedBoxView\RoundedBoxView.Forms.Plugin.iOSUnified\RoundedBoxView.Forms.Plugin.iOSUnified.csproj">
       <Project>{BB864987-FD1A-4303-A4FC-B1F7E120E78D}</Project>
       <Name>RoundedBoxView.Forms.Plugin.iOSUnified</Name>
-      <IsAppExtension>False</IsAppExtension>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
     <ProjectReference Include="..\SampleApp\SampleApp.csproj">
       <Name>SampleApp</Name>

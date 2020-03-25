@@ -12,7 +12,7 @@ namespace RoundedBoxView.Forms.Plugin.iOSUnified.ExtensionMethods
         return;
 
       nativeControl.Layer.MasksToBounds = true;
-      nativeControl.Layer.CornerRadius = (float) formsControl.CornerRadius;
+      nativeControl.Layer.CornerRadius = (float) formsControl.BorderCornerRadius;
       nativeControl.UpdateBorder(formsControl.BorderColor, formsControl.BorderThickness);
     }
 
@@ -24,7 +24,7 @@ namespace RoundedBoxView.Forms.Plugin.iOSUnified.ExtensionMethods
 
       if (propertyChanged == Abstractions.RoundedBoxView.CornerRadiusProperty.PropertyName)
       {
-        nativeControl.Layer.CornerRadius = (float) formsControl.CornerRadius;
+        nativeControl.Layer.CornerRadius = (float) formsControl.BorderCornerRadius;
       }
 
       if (propertyChanged == Abstractions.RoundedBoxView.BorderColorProperty.PropertyName)

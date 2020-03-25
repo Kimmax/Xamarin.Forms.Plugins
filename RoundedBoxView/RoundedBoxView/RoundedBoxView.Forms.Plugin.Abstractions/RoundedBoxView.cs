@@ -4,13 +4,12 @@ namespace RoundedBoxView.Forms.Plugin.Abstractions
 {
     public class RoundedBoxView : BoxView
     {
-        public static readonly BindableProperty CornerRadiusProperty =
-            BindableProperty.Create("CornerRadius", typeof (double), typeof (RoundedBoxView), default(double));
+        public static readonly BindableProperty BorderCornerRadiusProperty =
+            BindableProperty.Create("BorderCornerRadius", typeof (double), typeof (RoundedBoxView), default(double));
 
-        public double CornerRadius
-        {
-            get { return (double) GetValue(CornerRadiusProperty); }
-            set { SetValue(CornerRadiusProperty, value); }
+        public double BorderCornerRadius {
+            get { return (double) GetValue(BorderCornerRadiusProperty); }
+            set { SetValue(BorderCornerRadiusProperty, value); }
         }
 
 		/// <summary>

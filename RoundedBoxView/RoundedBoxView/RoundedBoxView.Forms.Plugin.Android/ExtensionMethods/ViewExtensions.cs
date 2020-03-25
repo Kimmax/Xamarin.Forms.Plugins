@@ -23,7 +23,7 @@ namespace RoundedBoxView.Forms.Plugin.Droid.ExtensionMethods
 		nativeControl.SetBackgroundDrawable(background);
 	  }
 
-      nativeControl.UpdateCornerRadius(formsControl.CornerRadius);
+      nativeControl.UpdateCornerRadius(formsControl.BorderCornerRadius);
       nativeControl.UpdateBorder(formsControl.BorderColor, formsControl.BorderThickness);
     }
 
